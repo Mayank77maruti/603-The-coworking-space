@@ -1,9 +1,11 @@
 import React from 'react';
+import { SignInButton } from '@clerk/clerk-react';
 
 
 const Home = () => {
   return (
     <div>
+    
       <header className="header" data-header>
         <div className="container">
           <a href="#" className="logo">
@@ -61,10 +63,14 @@ const Home = () => {
               <a href="tel:+88123123456" className="body-1 contact-number hover-underline">+88-123-123456</a>
             </div>
           </nav>
-          <a href="indexLayout.html" className="btn btn-secondary">
-            <span className="text text-1">Make Your Space</span>
-            <span className="text text-2" aria-hidden="true">Make Your Space</span>
-          </a>
+          <SignInButton>
+  <button className="btn btn-secondary">
+    <>
+      <span className="text text-1">login</span>
+      <span className="text text-2" aria-hidden="true">login</span>
+    </>
+  </button>
+</SignInButton>
           <button className="nav-open-btn" aria-label="open menu" data-nav-toggler>
             <span className="line line-1"></span>
             <span className="line line-2"></span>
