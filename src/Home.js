@@ -1,11 +1,9 @@
 import React from 'react';
 import { SignInButton } from '@clerk/clerk-react';
 
-
 const Home = () => {
   return (
     <div>
-    
       <header className="header" data-header>
         <div className="container">
           <a href="#" className="logo">
