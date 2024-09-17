@@ -1,5 +1,6 @@
 import React from 'react';
 import Home from './Home';
+import Boq from './boq'
 import './style.css'; 
 import './script.js'; 
 import Preloader from './preloader.jsx';
@@ -24,6 +25,7 @@ function App() {
       {/* <Preloader />   */}
 
       <Home />
+      <Boq />
     </div>
     </ClerkProvider>
 
