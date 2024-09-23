@@ -112,9 +112,9 @@ const Home = () => {
                 <p className="body-2 hero-text slider-reveal">
                   Spaces that are occupied by Corporates and Start ups, designed with your business in mind
                 </p>
-                <a href="#" className="btn btn-primary slider-reveal">
-                  <span className="text text-1">Make Your Space</span>
-                  <span className="text text-2" aria-hidden="true">Make Your Space</span>
+                <a href="https://splendorous-sprinkles-4e9b36.netlify.app/" className="btn btn-primary slider-reveal">
+                       <span className="text text-1">Make Your Layout</span>
+                        <span className="text text-2" aria-hidden="true">Make Your Layout</span>
                 </a>
               </li>
               <li className="slider-item" data-hero-slider-item>
@@ -129,9 +129,9 @@ const Home = () => {
                 <p className="body-2 hero-text slider-reveal">
                   Come with your team & experience the joy of inspiring office design.
                 </p>
-                <a href="#" className="btn btn-primary slider-reveal">
-                  <span className="text text-1">Make Your Space</span>
-                  <span className="text text-2" aria-hidden="true">Make Your Space</span>
+                <a href="https://splendorous-sprinkles-4e9b36.netlify.app/" className="btn btn-primary slider-reveal">
+                       <span className="text text-1">Make Your Layout</span>
+                        <span className="text text-2" aria-hidden="true">Make Your Layout</span>
                 </a>
               </li>
             </ul>
