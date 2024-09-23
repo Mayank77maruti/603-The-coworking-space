@@ -94,9 +94,9 @@ const Home = () => {
                   <p className="body-2 hero-text slider-reveal">
                     Best working environment that suits your business needs.
                   </p>
-                  <a href="#" className="btn btn-primary slider-reveal">
-                    <span className="text text-1">Make Your Space</span>
-                    <span className="text text-2" aria-hidden="true">Make Your Space</span>
+                  <a href="https://splendorous-sprinkles-4e9b36.netlify.app/" className="btn btn-primary slider-reveal">
+                       <span className="text text-1">Make Your Layout</span>
+                        <span className="text text-2" aria-hidden="true">Make Your Layout</span>
                   </a>
                 </div>
               </li>
