@@ -621,13 +621,30 @@ body.nav-active { overflow: hidden; }
   transition-delay: 250ms;
 }
 
+.header {
+  padding-top: 0;
+  margin-top: 0;
+}
+
 .header .container {
   padding-inline: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 8px;
+  margin-top: -10px;
 }
+
+/* Adjust for mobile devices */
+@media (max-width: 600px) {
+  .header .container {
+    padding-inline: 10px; /* Reduce padding on smaller screens */
+    margin-top: 0; /* Remove negative margin to prevent it from going off-screen */
+    flex-wrap: wrap; /* Allow elements to wrap if they don't fit */
+  }
+}
+
+
 
 .nav-open-btn {
   padding: 12px;
