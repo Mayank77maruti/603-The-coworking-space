@@ -26,7 +26,7 @@ const Home = () => {
               <li className="navbar-item">
                 <a href="#menu" className="navbar-link hover-underline">
                   <div className="separator"></div>
-                  <span className="span">Spaces</span>
+                  <span className="span">Services</span>
                 </a>
               </li>
               <li className="navbar-item">
@@ -84,7 +84,8 @@ const Home = () => {
               <li className="slider-item active" data-hero-slider-item>
                 <div className="container">
                   <div className="slider-bg">
-                    <img src="./images/sunmill-loc_batcheditor_fotor (1).avif" width="1880" height="950" alt="" className="img-cover" />
+                  <img src="https://fefevs.sirv.com/sunmill-loc.png" width="1880" height="950" alt="" className="img-cover" />
+
                   </div>
                   <p className="label-2 section-subtitle slider-reveal">Classic Elegance</p>
                   <h1 className="display-1 hero-title slider-reveal">
@@ -102,7 +103,7 @@ const Home = () => {
               </li>
               <li className="slider-item" data-hero-slider-item>
                 <div className="slider-bg">
-                  <img src="./images/heroLocation (1).avif" width="1880" height="950" alt="" className="img-cover" />
+                  <img src="https://fefevs.sirv.com/Matulya5.JPG" width="1880" height="950" alt="" className="img-cover" />
                 </div>
                 <p className="label-2 section-subtitle slider-reveal">delightful experience</p>
                 <h1 className="display-1 hero-title slider-reveal">
@@ -119,7 +120,7 @@ const Home = () => {
               </li>
               <li className="slider-item" data-hero-slider-item>
                 <div className="slider-bg">
-                  <img src="./images/sunshine-loc.webp" width="1880" height="950" alt="" className="img-cover" />
+                  <img src="https://fefevs.sirv.com/Amore.JPG" width="1880" height="950" alt="" className="img-cover" />
                 </div>
                 <p className="label-2 section-subtitle slider-reveal">amazing & elegence</p>
                 <h1 className="display-1 hero-title slider-reveal">
@@ -221,7 +222,7 @@ Whether you're looking to redesign your existing office or create a new space fr
           </a>
         </div>
         <figure className="about-banner">
-          <img src={`${process.env.PUBLIC_URL}/images/Untitled20-202024-05-14T202107.959.jpg`} width="570" height="570" loading="lazy" alt="about banner"
+          <img src={`${process.env.PUBLIC_URL}https://fefevs.sirv.com/Untitled20-202024-05-14T202107.959.png`} width="570" height="570" loading="lazy" alt="about banner"
             className="w-100" data-parallax-item data-parallax-speed="1" />
           <div className="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
             <img src={`${process.env.PUBLIC_URL}/images/image-4.jpg`} width="285" height="285" loading="lazy" alt=""
@@ -233,7 +234,7 @@ Whether you're looking to redesign your existing office or create a new space fr
         </figure>
       </div>
     </section>
-    <section className="section testi text-center has-bg-image" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/uneebo-office-design-UgYT5nkXdK4-unsplash.avif)` }} aria-label="testimonials">
+    <section className="section testi text-center has-bg-image" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}https://fefevs.sirv.com/the-knowledge-academy-offices-dubai-2-1200x800-compact.jpg)` }} aria-label="testimonials">
       <div className="container" style={{ position: 'relative', zIndex: 1 }}>
         <div className="quote"></div>
         <div className="glass-box">
@@ -244,11 +245,6 @@ Whether you're looking to redesign your existing office or create a new space fr
             <img src={`${process.env.PUBLIC_URL}/images/testi-avatar.jpg`} width="100" height="100" loading="lazy" alt="Sam Jhonson" className="img" />
             <p className="label-2 profile-name">Sam Jhonson</p>
           </div>
-        </div>
-        <div className="wrapper">
-          <div className="separator"></div>
-          <div className="separator"></div>
-          <div className="separator"></div>
         </div>
       </div>
     </section>
@@ -326,14 +322,14 @@ Whether you're looking to redesign your existing office or create a new space fr
         </ul>
 
         <a href="#" className="btn btn-primary">
-          <span className="text text-1">Check Out BOQ</span>
-          <span className="text text-2" aria-hidden="true">Check Out BOQ</span>
+          <span className="text text-1">Check Out Layout</span>
+          <span className="text text-2" aria-hidden="true">Check Out Layout</span>
         </a>
       </div>
     </section>
         </article>
       </main>
-      <footer className="footer section has-bg-image text-center" style={{ backgroundImage: "url('./images/fae955e3-de29-4d6b-a41a-85563f86a931.avif')" }}>
+      <footer className="footer section has-bg-image text-center" style={{ backgroundImage: "url('https://fefevs.sirv.com/modern-room-office-black-background-ai-generated-photo.jpg')" }}>
         <div className="container">
           <div className="footer-top grid-list">
             <div className="footer-brand has-before has-after">
@@ -371,13 +367,10 @@ Whether you're looking to redesign your existing office or create a new space fr
                 <a href="#" className="label-2 footer-link hover-underline">Home</a>
               </li>
               <li>
-                <a href="#" className="label-2 footer-link hover-underline">Menus</a>
+                <a href="#" className="label-2 footer-link hover-underline">Services</a>
               </li>
               <li>
                 <a href="#" className="label-2 footer-link hover-underline">About Us</a>
-              </li>
-              <li>
-                <a href="#" className="label-2 footer-link hover-underline">Our Chefs</a>
               </li>
               <li>
                 <a href="#" className="label-2 footer-link hover-underline">Contact</a>
@@ -396,9 +389,7 @@ Whether you're looking to redesign your existing office or create a new space fr
               <li>
                 <a href="#" className="label-2 footer-link hover-underline">Youtube</a>
               </li>
-              <li>
-                <a href="#" className="label-2 footer-link hover-underline">Google Map</a>
-              </li>
+             
             </ul>
           </div>
           <div className="footer-bottom">
