@@ -834,6 +834,18 @@ body.nav-active { overflow: hidden; }
   z-index: -1;
 }
 
+/* New overlay styles */
+.hero .slider-bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(29, 22, 22, 0.5); /* Adjust the alpha value (0.5) to change the overlay opacity */
+  z-index: 1;
+}
+
 .hero .slider-item.active .slider-bg {
   animation: smoothScale 7s linear forwards;
 }
@@ -889,14 +901,11 @@ body.nav-active { overflow: hidden; }
   animation: sliderReveal 1s ease forwards;
 }
 
-
-
 @keyframes sliderReveal {
   0% {
     transform: translateY(30px);
     opacity: 0;
   }
-
   100% {
     transform: translateY(0);
     opacity: 1;
@@ -904,14 +913,9 @@ body.nav-active { overflow: hidden; }
 }
 
 .hero .slider-item.active .section-subtitle { animation-delay: 500ms; }
-
 .hero .slider-item.active .hero-title { animation-delay: 1000ms; }
-
 .hero .slider-item.active .hero-text { animation-delay: 1.5s; }
-
 .hero .slider-item.active .btn { animation-delay: 2s; }
-
-
 
 
 
