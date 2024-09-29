@@ -670,7 +670,7 @@ body.nav-active { overflow: hidden; }
 .nav-open-btn .line-3 { animation-delay: 300ms; }
 
 .navbar {
-  position: absolute;
+  position: fixed;
   background-color: hsl(0deg 37.86% 32.67%);
   top: 0;
   left: -360px;
@@ -726,9 +726,7 @@ body.nav-active { overflow: hidden; }
 
 .navbar-link::after { display: none; }
 
-.navbar-link .span { 
-  transition: var(--transition-1);
- }
+.navbar-link .span { transition: var(--transition-1); }
 
 .navbar-link:is(:hover, :focus-visible, .active) .span {
   color: var(--gold-crayola);

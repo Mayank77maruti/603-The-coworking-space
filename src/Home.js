@@ -7,14 +7,14 @@ const Home = () => {
       <header className="header" data-header>
         <div className="container">
           <a href="#" className="logo">
-            <img src="./images/603logo (1).avif" width="160" height="50" alt="Grilli - Home" />
+            <img src="https://fefevs.sirv.com/603logo%20(1).avif" width="160" height="50" alt="Grilli - Home" />
           </a>
           <nav className="navbar" data-navbar>
             <button className="close-btn" aria-label="close menu" data-nav-toggler>
               <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
             </button>
             <a href="#" className="logo">
-              <img src="./images/603logo (1).avif" width="160" height="50" alt="Grilli - Home" />
+              <img src="https://fefevs.sirv.com/603logo%20(1).avif" width="160" height="50" alt="Grilli - Home" />
             </a>
             <ul className="navbar-list">
               <li className="navbar-item">
@@ -142,10 +142,6 @@ const Home = () => {
             <button className="slider-btn next" aria-label="slide to next" data-next-btn>
               <ion-icon name="chevron-forward"></ion-icon>
             </button>
-            <a href="indexLayout.html" className="hero-btn has-after">
-              <img src="./images/hero-icon.png" width="48" height="48" alt="booking icon" />
-              <span className="label-2 text-center span">Book A Space</span>
-            </a>
           </section>
           <section className="section service bg-black-10 text-center" aria-label="service">
       <div className="container">
