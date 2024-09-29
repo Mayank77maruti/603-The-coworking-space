@@ -50,15 +50,16 @@ const Home = () => {
             </ul>
             <div className="text-center">
               <p className="headline-1 navbar-title">Visit Us</p>
+              
+             
               <address className="body-4">
-                Restaurant St, Delicious City, <br />
-                London 9578, UK
+                Makhija Arcade, 35th Rd, Khar, Khar West, Mumbai, Maharashtra 400052
               </address>
-              <p className="body-4 navbar-text">Open: 9.30 am - 2.30pm</p>
-              <a href="mailto:booking@grilli.com" className="body-4 sidebar-link">booking@grilli.com</a>
-              <div className="separator"></div>
-              <p className="contact-label">Booking Request</p>
-              <a href="tel:+88123123456" className="body-1 contact-number hover-underline">+88-123-123456</a>
+              <a href="mailto:sales@603thecoworkingspace.com" className="body-4 contact-link">sales@603thecoworkingspace.com</a>
+              <address className="body-4">Booking Request : +919136036603
+/
++919920207026 </address>
+              <p className="body-4">Open : 09:00 am - 01:00 pm</p>
             </div>
           </nav>
           <SignInButton>
@@ -148,22 +149,21 @@ const Home = () => {
         <p className="section-subtitle label-2">Luxurious Office Interiors</p>
         <h2 className="headline-1 section-title">We Offer Top Notch</h2>
         <p className="section-text">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industrys
-          standard dummy text ever.
+        We offer top-notch products designed to meet all your office space needs.
         </p>
         <ul className="grid-list">
           <li>
             <div className="service-card">
               <a href="#" className="has-before hover:shine">
                 <figure className="card-banner img-holder" style={{ '--width': 285, '--height': 336 }}>
-                  <img src="./images/benjamin-child-0sT9YhNgSEs-unsplash.avif" width="285" height="336" loading="lazy" alt="Breakfast" className="img-cover" />
+                  <img src="https://fefevs.sirv.com/benjamin-child-0sT9YhNgSEs-unsplash.avif" width="285" height="336" loading="lazy" alt="Breakfast" className="img-cover" />
                 </figure>
               </a>
               <div className="card-content">
                 <h3 className="title-4 card-title">
-                  <a href="#">Meeting Room</a>
+                  <h1>Meeting Room</h1>
                 </h3>
-                <a href="#" className="btn-text hover-underline label-2">View Space</a>
+                {/* <a href="#" className="btn-text hover-underline label-2">View Space</a> */}
               </div>
             </div>
           </li>
@@ -171,14 +171,14 @@ const Home = () => {
             <div className="service-card">
               <a href="#" className="has-before hover:shine">
                 <figure className="card-banner img-holder" style={{ '--width': 285, '--height': 336 }}>
-                  <img src="./images/nastuh-abootalebi-JdcJn85xD2k-unsplash.avif" width="285" height="336" loading="lazy" alt="Appetizers" className="img-cover" />
+                  <img src="https://fefevs.sirv.com/aerial.jpg" width="285" height="336" loading="lazy" alt="Appetizers" className="img-cover" />
                 </figure>
               </a>
               <div className="card-content">
                 <h3 className="title-4 card-title">
-                  <a href="#">Appetizers</a>
+                  <h1>Aerial Lights</h1>
                 </h3>
-                <a href="#" className="btn-text hover-underline label-2">View Space</a>
+                {/* <a href="#" className="btn-text hover-underline label-2">View Space</a> */}
               </div>
             </div>
           </li>
@@ -186,14 +186,14 @@ const Home = () => {
             <div className="service-card">
               <a href="#" className="has-before hover:shine">
                 <figure className="card-banner img-holder" style={{ '--width': 285, '--height': 336 }}>
-                  <img src="./images/the-9th-coworking--MezGpfNBTo-unsplash.avif" width="285" height="336" loading="lazy" alt="Drinks" className="img-cover" />
+                  <img src="https://fefevs.sirv.com/the-9th-coworking--MezGpfNBTo-unsplash.avif" width="285" height="336" loading="lazy" alt="Drinks" className="img-cover" />
                 </figure>
               </a>
               <div className="card-content">
                 <h3 className="title-4 card-title">
-                  <a href="#">Manager Desk</a>
+                  <h1>Manager Desk</h1>
                 </h3>
-                <a href="#" className="btn-text hover-underline label-2">View Space</a>
+                {/* <a href="#" className="btn-text hover-underline label-2">View Space</a> */}
               </div>
             </div>
           </li>
@@ -335,8 +335,10 @@ Whether you're looking to redesign your existing office or create a new space fr
               <address className="body-4">
                 Makhija Arcade, 35th Rd, Khar, Khar West, Mumbai, Maharashtra 400052
               </address>
-              <a href="mailto:booking@grilli.com" className="body-4 contact-link">booking@grilli.com</a>
-              <a href="tel:+88123123456" className="body-4 contact-link">Booking Request : +88-123-123456</a>
+              <a href="mailto:sales@603thecoworkingspace.com" className="body-4 contact-link">sales@603thecoworkingspace.com</a>
+              <address className="body-4">Booking Request : +919136036603
+/
++919920207026 </address>
               <p className="body-4">Open : 09:00 am - 01:00 pm</p>
               <div className="wrapper">
                 <div className="separator"></div>
