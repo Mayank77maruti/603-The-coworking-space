@@ -1,34 +1,46 @@
 import React from 'react';
-
-const About = () => (
-  <section className="section about text-center" aria-labelledby="about-label" id="about">
-    <div className="container">
-      <div className="about-content">
-        <p className="label-2 section-subtitle" id="about-label">Our Story</p>
-        <h2 className="headline-1 section-title">603 vor Tells a Story</h2>
-        <p className="section-text">
-          Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the
-          industrys standard dummy text ever since the when an unknown printer took a galley of type and scrambled
-          it to make a type specimen book It has survived not only five centuries, but also the leap into.
-        </p>
-        <div className="contact-label">Book Through Call</div>
-        <a href="tel:+804001234567" className="body-1 contact-number hover-underline">+91 9136036603</a>
-        <a href="#" className="btn btn-primary">
-          <span className="text text-1">Read More</span>
-          <span className="text text-2" aria-hidden="true">Read More</span>
-        </a>
+import "./about.css"
+const aboutus = () => {
+  return (
+    <div className="about-container">
+      <h1 className="about-title">About Us</h1>
+      <h2 className="about-subtitle">Who We Are</h2>
+      <p className="about-text">
+        We are a team of passionate professionals dedicated to providing the best services in the industry.
+        With years of experience, our mission is to transform the way our clients experience business, 
+        delivering innovative and high-quality solutions.
+      </p>
+      <h2 className="about-subtitle">Our Mission</h2>
+      <p className="about-text">
+        To create exceptional experiences and solutions that exceed expectations, fostering growth and success for 
+        our clients, partners, and community.
+      </p>
+      <h2 className="about-subtitle">Our Vision</h2>
+      <p className="about-text">
+        We aspire to be the leading provider of innovative solutions, creating a positive impact and shaping a better 
+        future for our industry and clients.
+      </p>
+      <h2 className="about-subtitle">Our Values</h2>
+      <div className="about-values">
+        <div className="value-card">
+          <h3 className="value-title">Integrity</h3>
+          <p className="value-text">We believe in honesty, transparency, and doing the right thing, always.</p>
+        </div>
+        <div className="value-card">
+          <h3 className="value-title">Innovation</h3>
+          <p className="value-text">Our commitment to creativity drives us to push boundaries and develop cutting-edge solutions.</p>
+        </div>
+        <div className="value-card">
+          <h3 className="value-title">Excellence</h3>
+          <p className="value-text">We strive for perfection, delivering high-quality results in everything we do.</p>
+        </div>
+        <div className="value-card">
+          <h3 className="value-title">Collaboration</h3>
+          <p className="value-text">We believe in the power of teamwork, working together to achieve remarkable outcomes.</p>
+        </div>
       </div>
-      <figure className="about-banner">
-        <img src="./assets/images/Untitled20-202024-05-14T202107.959.jpg" width="570" height="570" loading="lazy" alt="about banner" className="w-100" data-parallax-item data-parallax-speed="1" />
-        <div className="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
-          <img src="./assets/images/image-4.jpg" width="285" height="285" loading="lazy" alt="" className="w-100" />
-        </div>
-        <div className="abs-img abs-img-2 has-before">
-          <img src="./assets/images/badge-2.png" width="133" height="134" loading="lazy" alt="" />
-        </div>
-      </figure>
     </div>
-  </section>
-);
+  );
+};
 
-export default About;
+export default aboutus;

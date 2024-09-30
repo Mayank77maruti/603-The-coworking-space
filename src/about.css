@@ -1,0 +1,63 @@
+/* CSS */
+.about-container {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 50px;
+  }
+  
+  .about-container h1, .about-container h2, .about-container p {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: gold; /* Gold title */
+  }
+  
+  .about-subtitle {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color: #fff;
+  }
+  
+  .about-text {
+    line-height: 1.6;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #d3d3d3; /* Light gray text */
+  }
+  
+  .about-values {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .value-card {
+    background-color: #111; /* Slightly lighter black */
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    border: 1px solid gold; /* Gold border */
+    transition: transform 0.3s;
+  }
+  
+  .value-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .value-title {
+    font-size: 1.2rem;
+    color: gold;
+    margin-bottom: 10px;
+  }
+  
+  .value-text {
+    font-size: 0.9rem;
+    color: #d3d3d3;
+  }
+  

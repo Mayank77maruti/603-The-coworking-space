@@ -1,5 +1,9 @@
 import React from 'react';
 import { SignInButton } from '@clerk/clerk-react';
+import { Link } from 'react-router-dom'
+import Aboutus from './About';
+
+
 
 
 const Home = () => {
@@ -7,46 +11,46 @@ const Home = () => {
     <div>
       <header className="header" data-header>
         <div className="container">
-          <a href="#" className="logo">
+          <Link to="/" className="logo">
             <img src="https://fefevs.sirv.com/603logo%20(1).avif" width="160" height="50" alt="Grilli - Home" />
-          </a>
+          </Link>
           <nav className="navbar" data-navbar>
             <button className="close-btn" aria-label="close menu" data-nav-toggler>
               <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
             </button>
-            <a href="#" className="logo">
+            <Link to="/" className="logo">
               <img src="https://fefevs.sirv.com/603logo%20(1).avif" width="160" height="50" alt="Grilli - Home" />
-            </a>
+            </Link>
             <ul className="navbar-list">
               <li className="navbar-item">
-                <a href="#home" className="navbar-link hover-underline active">
+                <Link to="/" className="navbar-link hover-underline active">
                   <div className="separator"></div>
                   <span className="span">Home</span>
-                </a>
+                </Link>
               </li>
               <li className="navbar-item">
-                <a href="#menu" className="navbar-link hover-underline">
+                <Link to="#menu" className="navbar-link hover-underline">
                   <div className="separator"></div>
                   <span className="span">Services</span>
-                </a>
+                </Link>
               </li>
               <li className="navbar-item">
-                <a href="#about" className="navbar-link hover-underline">
+                <Link to="/aboutus" className="navbar-link hover-underline">
                   <div className="separator"></div>
                   <span className="span">About Us</span>
-                </a>
+                </Link>
               </li>
               <li className="navbar-item">
-                <a href="#" className="navbar-link hover-underline">
+                <Link to="#" className="navbar-link hover-underline">
                   <div className="separator"></div>
                   <span className="span">Images</span>
-                </a>
+                </Link>
               </li>
               <li className="navbar-item">
-                <a href="#" className="navbar-link hover-underline">
+                <Link to="#" className="navbar-link hover-underline">
                   <div className="separator"></div>
                   <span className="span">Contact</span>
-                </a>
+                </Link>
               </li>
             </ul>
             <div className="text-center">
@@ -97,7 +101,7 @@ const Home = () => {
                   <p className="body-2 hero-text slider-reveal">
                     Best working environment that suits your business needs.
                   </p>
-                  <a href="https://splendorous-sprinkles-4e9b36.netlify.app/" className="btn btn-primary slider-reveal">
+                  <a href="https://layout2-xi.vercel.app/" className="btn btn-primary slider-reveal">
                        <span className="text text-1">Make Your Layout</span>
                         <span className="text text-2" aria-hidden="true">Make Your Layout</span>
                   </a>
@@ -115,7 +119,7 @@ const Home = () => {
                 <p className="body-2 hero-text slider-reveal">
                   Spaces that are occupied by Corporates and Start ups, designed with your business in mind
                 </p>
-                <a href="https://splendorous-sprinkles-4e9b36.netlify.app/" className="btn btn-primary slider-reveal">
+                <a href="https://layout2-xi.vercel.app/" className="btn btn-primary slider-reveal">
                        <span className="text text-1">Make Your Layout</span>
                         <span className="text text-2" aria-hidden="true">Make Your Layout</span>
                 </a>
@@ -132,7 +136,7 @@ const Home = () => {
                 <p className="body-2 hero-text slider-reveal">
                   Come with your team & experience the joy of inspiring office design.
                 </p>
-                <a href="https://splendorous-sprinkles-4e9b36.netlify.app/" className="btn btn-primary slider-reveal">
+                <a href="https://layout2-xi.vercel.app/" className="btn btn-primary slider-reveal">
                        <span className="text text-1">Make Your Layout</span>
                         <span className="text text-2" aria-hidden="true">Make Your Layout</span>
                 </a>

@@ -17,6 +17,7 @@ if (!PUBLISHABLE_KEY) {
 
 function App() {
   console.log(import.meta.env);
+
   return (
     <ClerkProvider publishableKey={PUBLISHABLE_KEY} afterSignOutUrl="/">
     <div className="App">
