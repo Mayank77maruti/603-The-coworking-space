@@ -1,0 +1,492 @@
+/* About Page Container */
+.about-page-container {
+    font-family: 'Poppins', sans-serif;
+    padding: 40px;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Hero Section */
+  .about-hero-section {
+    background: linear-gradient(135deg, #6ab7ff 0%, #1976d2 100%);
+    padding: 100px 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 60px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .about-hero-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 80%);
+    animation: ripple 15s infinite linear;
+    pointer-events: none;
+  }
+  
+  @keyframes ripple {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(50%, 50%); }
+  }
+  
+  .about-main-title {
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  .about-main-tagline {
+    font-size: 1.4rem;
+    color: #e3f2fd;
+    font-weight: 300;
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeInUp 1s ease-out 0.3s both;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Who We Are Section */
+  .about-who-we-are {
+    margin: 80px 0;
+    text-align: center;
+  }
+  
+  .about-section-subtitle {
+    font-size: 2.5rem;
+    color: #1976d2;
+    margin-bottom: 25px;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .about-section-subtitle::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: #1976d2;
+    transition: width 0.3s ease;
+  }
+  
+  .about-section-subtitle:hover::after {
+    width: 100px;
+  }
+  
+  .about-description-text {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .about-team-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+  }
+  
+  .about-stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    color: #1976d2;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+  
+  .about-stat-item:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-stat-item::before {
+    content: attr(data-icon);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Mission and Vision Section */
+  .about-mission-vision {
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+    margin: 80px 0;
+  }
+  
+  .about-mission,
+  .about-vision {
+    width: 45%;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .about-mission::before,
+  .about-vision::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: linear-gradient(135deg, #6ab7ff 0%, #1976d2 100%);
+    z-index: -1;
+    filter: blur(20px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .about-mission:hover::before,
+  .about-vision:hover::before {
+    opacity: 0.1;
+  }
+  
+  .about-mission:hover,
+  .about-vision:hover {
+    transform: translateY(-10px);
+  }
+  
+  .about-mission h3,
+  .about-vision h3 {
+    color: #1976d2;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-mission p,
+  .about-vision p {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  
+  /* Values Section */
+  .about-values-section {
+    background-color: #f1f8ff;
+    padding: 80px 20px;
+    text-align: center;
+    margin: 80px 0;
+    border-radius: 20px;
+  }
+  
+  .about-values-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 50px;
+  }
+  
+  .about-value-card {
+    background-color: #fff;
+    padding: 30px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .about-value-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #6ab7ff, #1976d2);
+    transition: height 0.3s ease;
+  }
+  
+  .about-value-card:hover::before {
+    height: 10px;
+  }
+  
+  .about-value-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-value-title {
+    font-size: 1.5rem;
+    color: #1976d2;
+    margin-bottom: 15px;
+  }
+  
+  .about-value-description {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.7;
+  }
+  
+  /* Journey Section */
+  .about-journey-section {
+    margin: 100px 0;
+    text-align: center;
+  }
+  
+  .about-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+    position: relative;
+  }
+  
+  .about-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: #1976d2;
+    transform: translateX(-50%);
+  }
+  
+  .about-timeline-item {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    position: relative;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .about-timeline-item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  
+  .about-timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #1976d2;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .about-timeline-item:nth-child(odd)::before {
+    right: -40px;
+  }
+  
+  .about-timeline-item:nth-child(even)::before {
+    left: -40px;
+  }
+  
+  .about-timeline-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-year {
+    font-weight: bold;
+    color: #1976d2;
+    font-size: 1.3rem;
+  }
+  
+  .about-event {
+    color: #555;
+    font-size: 1.1rem;
+  }
+  
+  /* Call-to-Action Section */
+  .about-cta-section {
+    background: linear-gradient(135deg, #6ab7ff 0%, #1976d2 100%);
+    padding: 80px 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    margin: 80px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .about-cta-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 80%);
+    animation: ripple 20s infinite linear;
+    pointer-events: none;
+  }
+  
+  .about-cta-title {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .about-cta-description {
+    font-size: 1.2rem;
+    color: #e3f2fd;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .about-cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #1976d2;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .about-cta-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255,255,255,0.1), rgba(255,255,255,0.5), rgba(255,255,255,0.1));
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+  }
+  
+  .about-cta-button:hover::before {
+    transform: translateX(100%);
+  }
+  
+  .about-cta-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Contact Section */
+  .about-contact-section {
+    margin: 100px 0;
+    text-align: center;
+  }
+  
+  .about-contact-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .about-contact-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255,255,255,0.1), rgba(255,255,255,0.3), rgba(255,255,255,0.1));
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+  }
+  
+  .about-contact-button:hover::before {
+    transform: translateX(100%);
+  }
+  
+  .about-contact-button:hover {
+    background-color: #218838;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-main-title {
+      font-size: 3rem;
+    }
+    
+    .about-mission-vision {
+      flex-direction: column;
+    }
+    
+    .about-mission,
+    .about-vision {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    
+    .about-timeline-item {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-main-title {
+      font-size: 2.5rem;
+    }
+    
+    .about-team-stats {
+      flex-direction: column;
+    }
+    
+    .about-timeline-item {
+      width: 100%;
+    }
+  }
