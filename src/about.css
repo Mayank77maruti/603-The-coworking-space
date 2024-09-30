@@ -1,63 +1,259 @@
-/* CSS */
+/* Enhanced About Section Styles with Images */
 .about-container {
-    background-color: #000; /* Black background */
-    color: #fff; /* White text */
-    padding: 50px;
-  }
-  
-  .about-container h1, .about-container h2, .about-container p {
-    max-width: 800px;
+    background-color: #FFFFFF; /* White background */
+    color: #333333; /* Dark text for readability */
+    padding: 80px 20px;
+    font-family: 'Poppins', sans-serif; /* Modern, clean font */
+}
+
+.about-container h1, .about-container h2, .about-container p {
+    max-width: 1000px;
     margin: 0 auto;
     text-align: center;
-  }
-  
-  .about-title {
-    font-size: 2.5rem;
+}
+
+.hero-section {
+    background-image: url('https://fefevs.sirv.com/matulya2.webp'); /* Replace with actual hero image URL */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7); /* Slightly lighter overlay for better contrast */
+}
+
+.hero-section * {
+    position: relative;
+    z-index: 1;
+}
+
+.about-title {
+    font-size: 4rem;
     margin-bottom: 20px;
-    color: gold; /* Gold title */
-  }
-  
-  .about-subtitle {
-    font-size: 1.5rem;
-    margin: 20px 0;
-    color: #fff;
-  }
-  
-  .about-text {
-    line-height: 1.6;
-    font-size: 1rem;
-    margin-bottom: 20px;
-    color: #d3d3d3; /* Light gray text */
-  }
-  
-  .about-values {
+    color: #0056b3; /* Slightly darker blue for emphasis */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.about-tagline {
+    font-size: 1.8rem;
+    color: #0056b3; /* Darker blue */
+    margin-top: 10px;
+}
+
+.about-subtitle {
+    font-size: 2.2rem;
+    margin: 40px 0 20px;
+    color: #007BFF; /* Maintained blue for subtitle */
+    font-weight: 600;
+}
+
+.about-text {
+    line-height: 1.8;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #333333; /* Maintain dark text for body */
+}
+
+.team-stats {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .value-card {
-    background-color: #111; /* Slightly lighter black */
-    padding: 20px;
-    width: 250px;
-    text-align: center;
-    border: 1px solid gold; /* Gold border */
-    transition: transform 0.3s;
-  }
-  
-  .value-card:hover {
-    transform: translateY(-10px);
-  }
-  
-  .value-title {
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
     font-size: 1.2rem;
-    color: gold;
-    margin-bottom: 10px;
-  }
-  
-  .value-text {
-    font-size: 0.9rem;
-    color: #d3d3d3;
-  }
-  
+    color: #333333; /* Dark text */
+}
+
+.stat-item svg {
+    color: #0056b3; /* Darker blue icons */
+    font-size: 2.5rem;
+}
+
+.mission-vision {
+    display: flex;
+    gap: 60px;
+    margin: 80px 0;
+    background-color: #E1F5FE; /* Lighter blue background */
+    padding: 60px;
+    border-radius: 10px;
+}
+
+.mission, .vision {
+    flex: 1;
+}
+
+.about-values {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.value-card {
+    background-color: #E3F2FD; /* Very light blue background */
+    padding: 40px;
+    width: 300px;
+    text-align: center;
+    border: 2px solid #007BFF; /* Blue border */
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.value-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 30px rgba(0, 123, 255, 0.5); /* Blue glow */
+}
+
+.value-title {
+    font-size: 1.6rem;
+    color: #007BFF; 
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.value-text {
+    font-size: 1.1rem;
+    color: #555555; 
+    line-height: 1.6;
+}
+
+.timeline {
+    margin-top: 50px;
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #007BFF; /* Blue timeline line */
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.timeline-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.year {
+    font-weight: bold;
+    color: #0056b3; 
+    font-size: 1.4rem;
+    width: 100px;
+    text-align: center;
+}
+
+.event {
+    width: calc(50% - 70px);
+    background-color: #E3F2FD; /* Light blue */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cta-section, .contact-section {
+    text-align: center;
+    margin-top: 80px;
+    background-color: #E1F5FE; /* Light blue */
+    padding: 60px;
+    border-radius: 10px;
+}
+
+.cta-button, .contact-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #007BFF; /* Blue color */
+    color: #FFFFFF; /* White text */
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover, .contact-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-5px);
+}
+
+@media (max-width: 1024px) {
+    .mission-vision {
+        flex-direction: column;
+    }
+    
+    .team-stats {
+        flex-wrap: wrap;
+    }
+    
+    .timeline::before {
+        left: 0;
+    }
+    
+    .timeline-item {
+        flex-direction: column;
+    }
+    
+    .timeline-item:nth-child(even) {
+        flex-direction: column;
+    }
+    
+    .year {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 10px;
+        margin-left: 27px;
+    }
+    
+    .event {
+        width: calc(100% - 20px);
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 3rem;
+    }
+    
+    .about-subtitle {
+        font-size: 1.8rem;
+    }
+    
+    .value-card {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .hero-section {
+        padding: 60px 0;
+    }
+}
