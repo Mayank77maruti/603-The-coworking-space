@@ -29,7 +29,7 @@ const Home = () => {
                 </Link>
               </li>
               <li className="navbar-item">
-                <Link to="#menu" className="navbar-link hover-underline">
+                <Link to="/services" className="navbar-link hover-underline">
                   <div className="separator"></div>
                   <span className="span">Services</span>
                 </Link>
@@ -37,13 +37,7 @@ const Home = () => {
               <li className="navbar-item">
                 <Link to="/aboutus" className="navbar-link hover-underline">
                   <div className="separator"></div>
-                  <span className="span">About Us</span>
-                </Link>
-              </li>
-              <li className="navbar-item">
-                <Link to="#" className="navbar-link hover-underline">
-                  <div className="separator"></div>
-                  <span className="span">Images</span>
+                  <span className="span">About</span>
                 </Link>
               </li>
               <li className="navbar-item">

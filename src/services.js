@@ -1,54 +1,62 @@
-// src/Services.js
 import React from 'react';
-import { Laptop, User, Settings, Shield } from 'lucide-react';
 import './services.css';
 
-const servicesData = [
+const services = [
   {
-    id: 1,
-    title: 'Web Development',
-    description: 'Building responsive and high-performing websites.',
-    icon: <Laptop />,
+    title: "Consulting",
+    description: "Expert advice to help your business thrive in today's market.",
+    icon: "📈",
   },
   {
-    id: 2,
-    title: 'Consulting',
-    description: 'Expert advice to help you achieve your business goals.',
-    icon: <User />,
+    title: "Web Development",
+    description: "Creating stunning and responsive websites tailored to your needs.",
+    icon: "💻",
   },
   {
-    id: 3,
-    title: 'Technical Support',
-    description: '24/7 support to ensure your operations run smoothly.',
-    icon: <Settings />,
+    title: "Digital Marketing",
+    description: "Innovative marketing strategies to boost your online presence.",
+    icon: "📊",
   },
   {
-    id: 4,
-    title: 'Security Services',
-    description: 'Protecting your data with top-notch security solutions.',
-    icon: <Shield />,
+    title: "SEO Optimization",
+    description: "Optimizing your website to rank higher on search engines.",
+    icon: "🔍",
+  },
+  {
+    title: "Graphic Design",
+    description: "Visually appealing designs that capture your brand's essence.",
+    icon: "🎨",
+  },
+  {
+    title: "App Development",
+    description: "Building user-friendly mobile applications for Android & iOS.",
+    icon: "📱",
   },
 ];
 
-const Services = () => {
+const ServicesPage = () => {
   return (
-    <main className="services-container">
-      <section className="hero-section">
+    <div className="services-container">
+      <header className="services-header">
         <h1>Our Services</h1>
-        <p>Providing exceptional solutions tailored to your needs.</p>
-      </section>
+        <p>We offer a range of services to help your business grow and succeed.</p>
+      </header>
 
-      <section className="services-list">
-        {servicesData.map((service) => (
-          <div className="service-card" key={service.id}>
-            <div className="icon">{service.icon}</div>
-            <h2>{service.title}</h2>
-            <p>{service.description}</p>
+      <div className="services-grid">
+        {services.map((service, index) => (
+          <div className="service-card" key={index}>
+            <div className="service-icon">{service.icon}</div>
+            <h2 className="service-title">{service.title}</h2>
+            <p className="service-description">{service.description}</p>
           </div>
         ))}
-      </section>
-    </main>
+      </div>
+
+      <footer className="services-footer">
+        <p>Contact us today to learn how we can help you!</p>
+      </footer>
+    </div>
   );
 };
 
-export default Services;
+export default ServicesPage;
