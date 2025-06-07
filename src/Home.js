@@ -20,31 +20,31 @@ const Home = () => {
             </button>
             <Link to="/" className="logo">
               <img src="https://fefevs.sirv.com/603logo%20(1).avif" width="160" height="50" alt="Grilli - Home" />
-            </Link>
-            <ul className="navbar-list">
-              <li className="navbar-item">
-                <Link to="/" className="navbar-link hover-underline active">
-                  <div className="separator"></div>
-                  <span className="span">Home</span>
-                </Link>
-              </li>
-              <li className="navbar-item">
-                <Link to="/services" className="navbar-link hover-underline">
-                  <div className="separator"></div>
-                  <span className="span">Services</span>
-                </Link>
-              </li>
-              <li className="navbar-item">
-                <Link to="/aboutus" className="navbar-link hover-underline">
-                  <div className="separator"></div>
-                  <span className="span">About</span>
-                </Link>
-              </li>
-              <li className="navbar-item">
-                <Link to="#" className="navbar-link hover-underline">
-                  <div className="separator"></div>
-                  <span className="span">Contact</span>
-                </Link>
+            // </Link>
+            // <ul className="navbar-list">
+            //   <li className="navbar-item">
+            //     <Link to="/" className="navbar-link hover-underline active">
+            //       <div className="separator"></div>
+            //       <span className="span">Home</span>
+            //     </Link>
+            //   </li>
+            //   <li className="navbar-item">
+            //     <Link to="/services" className="navbar-link hover-underline">
+            //       <div className="separator"></div>
+            //       <span className="span">Services</span>
+            //     </Link>
+            //   </li>
+            //   <li className="navbar-item">
+            //     <Link to="/aboutus" className="navbar-link hover-underline">
+            //       <div className="separator"></div>
+            //       <span className="span">About</span>
+            //     </Link>
+            //   </li>
+            //   <li className="navbar-item">
+            //     <Link to="#" className="navbar-link hover-underline">
+            //       <div className="separator"></div>
+            //       <span className="span">Contact</span>
+            //     </Link>
               </li>
             </ul>
             <div className="text-center">
