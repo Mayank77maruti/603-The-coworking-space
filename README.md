@@ -1,5 +1,5 @@
 <div align="center">
-   <img src="assets/images/603logo (1).avif" height="50">
+   <img src="https://fefevs.sirv.com/603logo%20(1).avif" height="50">
    <h2 align="center"><a href="https://603-work-ved.vercel.app/">603-work-ved</a></h2>
  <i>603 The Coworking Space – Book Your Space, Build Your Vision</i>
 </div>
