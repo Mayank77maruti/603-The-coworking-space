@@ -9,7 +9,7 @@ Our platform offers a seamless way for individuals and businesses to book exquis
 
 ## Prerequisites ✅
 > Before you begin, ensure you have met the following requirements:
-
+ 
 - **Git**: Download and install the latest version of [Git](https://git-scm.com/downloads "Download Git") <br>
 
   To verify Git is correctly installed, run `git --version` in your terminal. If the command returns a version number, you’re all set!
